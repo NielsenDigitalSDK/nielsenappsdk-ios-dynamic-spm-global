@@ -110,46 +110,46 @@
 /**
  Deprecated. NielsenId is not used by the SDK anymore
  */
-@property (readonly, nonnull) NSString *nielsenId __attribute((deprecated(("nielsenId is not used by the SDK anymore"))));
+@property (readonly) NSString *nielsenId __attribute((deprecated(("nielsenId is not used by the SDK anymore"))));
 
 /**
  Retrieve Demographic ID
  */
-@property (readonly, nonnull) NSString *demographicId;
+@property (readonly) NSString *demographicId;
 
 /**
  Retrieve First Party ID
  */
-@property (readonly, nonnull) NSString *firstPartyId;
+@property (readonly) NSString *firstPartyId;
 
 /**
  Retrieve Vendor ID
  */
-@property (readonly, nonnull) NSString *vendorId;
+@property (readonly) NSString *vendorId;
 
 /**
  Get the URL of the web page that is used for giving user a chance to
  opt out from the Nielsen measurements.
  */
-@property (readonly, nonnull) NSString *optOutURL;
+@property (readonly) NSString *optOutURL;
 
 /**
  Queries the Nielsen App Api version information.
  @returns NSString containing the version details.
  */
-@property (readonly, nullable) NSString *meterVersion;
+@property (readonly) NSString *meterVersion;
 
 /**
  Queries the Nielsen App Api framework for the last event that occurred.
  @returns an NSDictionary object with the event information:
  */
-@property (readonly, nullable) NSDictionary *lastEventDict;
+@property (readonly) NSDictionary *lastEventDict;
 
 /**
  Queries the Nielsen App Api framework for the last error that occurred.
  @returns an NSDictionary object with the error information:
  */
-@property (readonly, nullable) NSDictionary *lastErrorDict;
+@property (readonly) NSDictionary *lastErrorDict;
 
 /**
  Initializes the ID3Meter metering framework.
@@ -157,13 +157,13 @@
  @param delegate - object of a class that implements NielsenEventTrackerDelegate protocol
  @returns returns (id) pointer to object of a Meter object; nil if error occurred.
  */
-- (nullable instancetype)initWithAppInfo:(nonnull id)appInfo delegate:(nullable id<NielsenEventTrackerDelegate>)delegate;
+- (instancetype)initWithAppInfo:(id)appInfo delegate:(id<NielsenEventTrackerDelegate>)delegate;
 
 /**
  Main SDK API method for integration
  @param data - NSDictionary object that includes all the parameters required for reporting player updates to the SDK. Check documentation for proper key naming and values.
  */
-- (void)trackEvent:(nonnull NSDictionary *)data;
+- (void)trackEvent:(NSDictionary *)data;
 
 @end
 
@@ -175,13 +175,13 @@
  Notifies about the last event that occurred in the Nielsen App Api framework.
  Provides a NSDictionary object with the event information.
  */
-- (void)nielsenEventTracker:(nonnull NielsenEventTracker *)api eventOccurred:(nonnull NSDictionary *)event;
+- (void)nielsenEventTracker:(NielsenEventTracker *)api eventOccurred:(NSDictionary *)event;
 
 /**
  Notifies about the last error that occurred in the Nielsen App Api framework.
  Provides a NSDictionary object with the error information.
  */
-- (void)nielsenEventTracker:(nonnull NielsenEventTracker *)api errorOccurred:(nonnull NSDictionary *)error;
+- (void)nielsenEventTracker:(NielsenEventTracker *)api errorOccurred:(NSDictionary *)error;
 
 @end
 
