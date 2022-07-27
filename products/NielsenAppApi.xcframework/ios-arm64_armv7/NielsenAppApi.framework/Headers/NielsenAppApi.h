@@ -46,46 +46,46 @@
 /**
  Deprecated. NielsenId is not used by the SDK anymore
  */
-@property (readonly) NSString *nielsenId __attribute((deprecated(("nielsenId is not used by the SDK anymore"))));
+@property (readonly, nonnull) NSString *nielsenId __attribute((deprecated(("nielsenId is not used by the SDK anymore"))));
 
 /**
  Retrieve Demographic ID
  */
-@property (readonly) NSString *demographicId;
+@property (readonly, nonnull) NSString *demographicId;
 
 /**
  Retrieve First Party ID
  */
-@property (readonly) NSString *firstPartyId;
+@property (readonly, nonnull) NSString *firstPartyId;
 
 /**
  Retrieve Vendor ID
  */
-@property (readonly) NSString *vendorId;
+@property (readonly, nonnull) NSString *vendorId;
 
 /**
  Get the URL of the web page that is used for giving user a chance to
  opt out from the Nielsen measurements.
  */
-@property (readonly) NSString *optOutURL;
+@property (readonly, nonnull) NSString *optOutURL;
 
 /**
  Queries the Nielsen App Api version information.
  @returns NSString containing the version details.
  */
-@property (readonly) NSString *meterVersion;
+@property (readonly, nullable) NSString *meterVersion;
 
 /**
  Queries the Nielsen App Api framework for the last event that occurred.
  @returns an NSDictionary object with the event information:
  */
-@property (readonly) NSDictionary *lastEventDict;
+@property (readonly, nullable) NSDictionary *lastEventDict;
 
 /**
  Queries the Nielsen App Api framework for the last error that occurred.
  @returns an NSDictionary object with the error information:
  */
-@property (readonly) NSDictionary *lastErrorDict;
+@property (readonly, nullable) NSDictionary *lastErrorDict;
 
 
 /**
@@ -94,25 +94,25 @@
  @param delegate - object of a class that implements NielsenAppApiDelegate protocol
  @returns returns (id) pointer to object of a Meter object; nil if error occurred.
  */
-- (instancetype)initWithAppInfo:(id)appInfo delegate:(id<NielsenAppApiDelegate>)delegate;
+- (nullable instancetype)initWithAppInfo:(nonnull id)appInfo delegate:(nullable id<NielsenAppApiDelegate>)delegate;
 
 /**
  Deprecated. NielsenId is not used by the SDK anymore
  */
-- (NSString *)getNielsenId __attribute((deprecated(("nielsenId is not used by the SDK anymore"))));
+- (nonnull NSString *)getNielsenId __attribute((deprecated(("nielsenId is not used by the SDK anymore"))));
 
 /**
  Start playing a content.
  @param channelInfo - a JSON formatted NSString object or NSDictionary object that includes metadata of the channel. Check documentation for proper key naming and values.
     This should be availabe when user tap the play button.
  */
-- (void)play:(id)channelInfo;
+- (void)play:(nullable id)channelInfo;
 
 /**
  Load metadata from content.
  @param metadata - a JSON formatted NSString object or NSDictionary object that includes metadata of either the content or ad. Check documentation for proper key naming and values. If available, metadata should come from video server or from ad manager before, during, or after a content. And, app may need to reformat it to json string per requirement from Nielsen
  */
-- (void)loadMetadata:(id)metadata;
+- (void)loadMetadata:(nullable id)metadata;
 
 /**
  Stop or pause playing an ad.
@@ -135,13 +135,13 @@
  Send Nielsen ID3 tag data.
  @param data - a string captured from ID3 PRIV info field
  */
-- (void)sendID3:(NSString *)data;
+- (void)sendID3:(nonnull NSString *)data;
 
 /**
  Reporting OTT update event to the SDK.
  @param ottInfo - a JSON formatted NSString object or NSDictionary object that includes details about over-the-top status and device details. Check documentation for proper key naming and values.
  */
-- (void)updateOTT:(id)ottInfo;
+- (void)updateOTT:(nonnull id)ottInfo;
 
 /**
  Get the URL of the web page that is used for giving user a chance to
@@ -150,13 +150,13 @@
  Deprecated. Will be removed in future release.
  Please use optOutURLString property instead
  */
-- (NSString *)optOutURLString __attribute((deprecated(("Please use optOutURL property instead."))));
+- (nonnull NSString *)optOutURLString __attribute((deprecated(("Please use optOutURL property instead."))));
 
 /**
  Disable metering for the app due to user opt out.
  @param optOut - a specific string that contains optout status.
  */
-- (BOOL)userOptOut:(NSString *)optOut;
+- (BOOL)userOptOut:(nonnull NSString *)optOut;
 
 /**
  Queries the Nielsen App Api version information.
@@ -165,7 +165,7 @@
  Deprecated. Will be removed in future release.
  Please use meterVersion property instead
  */
-- (NSString *)getMeterVersion __attribute((deprecated(("Please use meterVersion property instead."))));
+- (nullable NSString *)getMeterVersion __attribute((deprecated(("Please use meterVersion property instead."))));
 
 /**
  Queries the Nielsen App Api framework for the last event that occurred.
@@ -174,7 +174,7 @@
  Deprecated. Will be removed in future release.
  Please use lastEventDict property instead
  */
-- (NSDictionary *)getLastEventDict __attribute((deprecated(("Please use lastEventDict property instead."))));
+- (nullable NSDictionary *)getLastEventDict __attribute((deprecated(("Please use lastEventDict property instead."))));
 
 /**
  Queries the Nielsen App Api framework for the last error that occurred.
@@ -183,7 +183,7 @@
  Deprecated. Will be removed in future release.
  Please use lastErrorDict property instead
  */
-- (NSDictionary *)getLastErrorDict __attribute((deprecated(("Please use lastErrorDict property instead."))));
+- (nullable NSDictionary *)getLastErrorDict __attribute((deprecated(("Please use lastErrorDict property instead."))));
 
 @end
 
@@ -195,13 +195,13 @@
  Notifies about the last event that occurred in the Nielsen App Api framework.
  Provides a NSDictionary object with the event information.
  */
-- (void)nielsenAppApi:(NielsenAppApi *)appApi eventOccurred:(NSDictionary *)event;
+- (void)nielsenAppApi:(nonnull NielsenAppApi *)appApi eventOccurred:(nonnull NSDictionary *)event;
 
 /**
  Notifies about the last error that occurred in the Nielsen App Api framework.
  Provides a NSDictionary object with the error information.
  */
-- (void)nielsenAppApi:(NielsenAppApi *)appApi errorOccurred:(NSDictionary *)error;
+- (void)nielsenAppApi:(nonnull NielsenAppApi *)appApi errorOccurred:(nonnull NSDictionary *)error;
 
 @end
 

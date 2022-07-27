@@ -1,10 +1,12 @@
-//
-//  NielsenAppApi-umbrella.h
-//  NielsenAppApi
-//
-//  Created by Mike Petrov on 22/11/2018.
-//  Copyright © 2018 Nielsen. All rights reserved.
-//
+/**
+ * App SDK Application
+ *
+ * Copyright (C) 2018, The Nielsen Company (US) LLC. All Rights Reserved.
+ *
+ * Software contains the Confidential Information of Nielsen and is subject to your relevant agreements with Nielsen.
+ *
+ * remarks:
+ */
 
 #import <UIKit/UIKit.h>
 
