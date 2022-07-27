@@ -1,6 +1,0 @@
-framework module NielsenTVAppApi {
-    umbrella header "NielsenAppApi-umbrella.h"
-
-    export *
-    module * { export * }
-}
