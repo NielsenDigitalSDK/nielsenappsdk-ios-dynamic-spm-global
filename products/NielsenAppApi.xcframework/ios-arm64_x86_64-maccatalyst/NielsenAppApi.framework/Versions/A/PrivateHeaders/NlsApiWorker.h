@@ -10,8 +10,7 @@
  */
 
 #import <Foundation/Foundation.h>
-
-#import "NlsKeychainStorage.h"
+#import <UIKit/UIKit.h>
 #import "NlsDataProcess.h"
 #import "NlsDataTransfer.h"
 #import "NlsConfigManager.h"
@@ -30,7 +29,11 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 @class NlsFPIDManager;
 @class NlsDeviceIdAccess;
 @class NlsMappingDictionary;
-@protocol NlsViewabilityTracker;
+@class NlsUtil;
+@class NlsVaViewabilityStorage;
+@class NlsVaViewabilityTracker;
+@class NlsKeychainStorage;
+@class NielsenAppApi;
 
 @class NlsCATLogger;
 @protocol NlsCATLoggerEventOwner;
@@ -57,7 +60,9 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 @property (strong, readonly, nonnull) NlsMappingDictionary *globals;
 @property (strong, readonly, nonnull) NlsFPIDManager *fpidManager;
 @property (strong, readonly) NlsDataProcessRequestManager *dataProcessRequestManager;
-@property (strong, readonly) id<NlsViewabilityTracker> viewabilityTracker;
+@property (strong, readonly) NlsVaViewabilityStorage *viewabilityStorage;
+@property (strong, readonly) NlsVaViewabilityTracker *viewabilityTracker;
+
 @property (strong, readonly) NSDictionary *appInfoDict;
 
 @property (nonatomic, readonly) BOOL isOnline;
@@ -76,6 +81,7 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
                         storage:(NlsStorage *)storage
            catLoggerEventsOwner:(id<NlsCATLoggerEventOwner>)catLoggerEventsOwner;
 
+- (void)startViewabilityTrackerWith:(NSInteger)viewTag withParentView:(UIView *)parentView friendlyObstructions:(NSArray<NSNumber *> *)friendlyObstructions;
 - (void)sessionStart:(NSDictionary *)metadata;
 - (void)loadMetadata:(NSDictionary *)metadata;
 - (void)updateOTT:(NSDictionary *)ottInfo;

@@ -34,3 +34,13 @@
 - (void)newPatternObject;
 
 @end
+
+@protocol NlsEventDataProcessDelegate <NSObject>
+
+- (void)pauseDetectedWithOffset:(long long)value withArrivalTime:(NSTimeInterval)arrivalTime;
+
+@optional
+
+- (void)adDetectedWithArrivalTime:(NSTimeInterval)arrivalTime;
+
+@end

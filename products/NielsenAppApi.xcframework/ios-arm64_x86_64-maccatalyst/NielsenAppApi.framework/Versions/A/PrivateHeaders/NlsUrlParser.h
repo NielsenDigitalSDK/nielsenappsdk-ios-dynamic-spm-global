@@ -13,6 +13,7 @@
 
 @class NlsLogger;
 @class NlsUrlParser;
+@class NlsUtil;
 
 @protocol NlsUrlParserDelegate <NSObject>
 

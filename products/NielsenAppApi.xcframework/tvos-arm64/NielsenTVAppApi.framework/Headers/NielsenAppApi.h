@@ -97,6 +97,11 @@
 - (nullable instancetype)initWithAppInfo:(nonnull id)appInfo delegate:(nullable id<NielsenAppApiDelegate>)delegate;
 
 /**
+ Initialize parameters for viewability and start observing viewability for the view
+ */
+- (void)trackViewability:(nonnull NSDictionary *)data;
+
+/**
  Deprecated. NielsenId is not used by the SDK anymore
  */
 - (nonnull NSString *)getNielsenId __attribute((deprecated(("nielsenId is not used by the SDK anymore"))));

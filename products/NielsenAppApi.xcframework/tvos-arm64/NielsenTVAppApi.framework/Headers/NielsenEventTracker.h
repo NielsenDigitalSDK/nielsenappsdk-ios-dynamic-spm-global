@@ -160,6 +160,11 @@
 - (nullable instancetype)initWithAppInfo:(nonnull id)appInfo delegate:(nullable id<NielsenEventTrackerDelegate>)delegate;
 
 /**
+ Initialize parameters for viewability and start observing viewability for the view
+ */
+- (void)trackViewability:(nonnull NSDictionary *)data;
+
+/**
  Main SDK API method for integration
  @param data - NSDictionary object that includes all the parameters required for reporting player updates to the SDK. Check documentation for proper key naming and values.
  */

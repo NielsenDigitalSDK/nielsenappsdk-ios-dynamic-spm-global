@@ -10,7 +10,6 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "NielsenAppApi.h"
 
 #define kKeychainValueUpdatedNotification @"KeychainValueUpdated"
 
@@ -38,6 +37,7 @@
 
 @class NlsKeychainItemWrapper;
 @class NlsErrorReporter;
+@class NielsenAppApi;
 
 @interface NlsKeychainStorage : NSObject
 

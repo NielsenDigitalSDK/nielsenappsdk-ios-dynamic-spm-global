@@ -60,8 +60,9 @@ typedef NS_ENUM(NSUInteger, NlsSessionStopType) {
 @property(nonatomic, weak) id<NlsBaseDataProcessorDelegate> delegate;
 @property(nonatomic, strong) NSArray *requiredMetadataParams;
 @property(nonatomic, readonly) NSDictionary* lastPingDictionary;
-@property(nonatomic, readonly) NSString *viewabilityType;
-@property(nonatomic, readonly) NSDictionary *additionalViewabilityParameters;
+@property(nonatomic) BOOL isViewabilityProcessor;
+
+@property(nonatomic, readonly) BOOL measurePauseForViewability;
 
 - (instancetype)initWithWorker:(id)meterWorker withPid:(NSInteger)pid;
 - (void)processStart:(NSDictionary *)metadata withArrivalTime:(NSTimeInterval)arrivalTime;
@@ -74,10 +75,11 @@ typedef NS_ENUM(NSUInteger, NlsSessionStopType) {
 - (void)processEndWithArrivalTime:(NSTimeInterval)arrivalTime internalCall:(BOOL)internal;
 - (void)processMuteChanged:(BOOL)value withArrivalTime:(NSTimeInterval)arrivalTime;
 - (void)processAddedPlayheadWithValue:(long long)value withArrivalTime:(NSTimeInterval)arrivalTime;
-- (void)processZeroDurationSegment;
-- (void)processForwardWithValue:(long long)value withArrivalTime:(NSTimeInterval)arrivalTime;
-- (void)processRewindWithValue:(long long)value withArrivalTime:(NSTimeInterval)arrivalTime;
+- (void)processRewindTo:(long long)playhead withValue:(long long)value withArrivalTime:(NSTimeInterval)arrivalTime;
+- (void)processForwardTo:(long long)playhead withValue:(long long)value withArrivalTime:(NSTimeInterval)arrivalTime;
+- (void)processPauseWithArrivalTime:(NSTimeInterval)arrivalTime;
 - (void)processAppDisable:(BOOL)appDisable;
+- (void)processAdWithArrivalTime:(NSTimeInterval)arrivalTime;
 + (NielsenProductType)processorTypeForProduct:(NSString*)product;
 - (void)logPingWithDuration:(int)duration;
 - (BOOL)validateInputMetadata:(NSDictionary *)inputData withType:(NlsContentType)inputType;

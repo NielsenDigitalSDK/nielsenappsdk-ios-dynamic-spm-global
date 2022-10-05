@@ -29,9 +29,9 @@ typedef NS_ENUM(unsigned int, SessionType)
 @optional
 - (void)didSessionStartedForViewPattern:(NlsViewPattern*)viewPattern;
 - (void)didAddedPlayheadWithValue:(long long)value forViewPattern:(NlsViewPattern*)viewPattern withArrivalTime:(NSTimeInterval)arrivalTime;
-- (void)didDetectRewindWithValue:(long long)value forViewPattern:(NlsViewPattern*)viewPattern withArrivalTime:(NSTimeInterval)arrivalTime;
-- (void)didDetectForwardWithValue:(long long)value forViewPattern:(NlsViewPattern*)viewPattern withArrivalTime:(NSTimeInterval)arrivalTime;
-- (void)didDetectZeroDurationSegmentForViewPattern:(NlsViewPattern*)viewPattern;
+- (void)didDetectRewindTo:(long long)playhead withValue:(long long)value forViewPattern:(NlsViewPattern*)viewPattern withArrivalTime:(NSTimeInterval)arrivalTime;
+- (void)didDetectForwardTo:(long long)playhead withValue:(long long)value forViewPattern:(NlsViewPattern*)viewPattern withArrivalTime:(NSTimeInterval)arrivalTime;
+- (void)didSessionChangedForViewPattern:(NlsViewPattern*)viewPattern;
 
 @end
 
@@ -41,6 +41,7 @@ typedef NS_ENUM(unsigned int, SessionType)
 @property (nonatomic) BOOL enableForcePingMode;
 @property (nonatomic) NSTimeInterval lastViewTime;
 @property (nonatomic, readonly) int sessionTotalViewedSeconds;
+@property (nonatomic, readonly) int segmentTotalViewedSeconds;
 
 - (id)initWithSegmentSize:(int)inSzSeg
                  slotSize:(int)inSzSlot

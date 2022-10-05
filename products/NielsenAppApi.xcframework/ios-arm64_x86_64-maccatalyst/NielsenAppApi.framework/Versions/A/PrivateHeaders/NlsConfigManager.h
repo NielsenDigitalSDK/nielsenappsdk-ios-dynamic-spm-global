@@ -57,13 +57,6 @@
 #define vCfgRequestMethodGet                    @"GET"
 #define vCfgRequestMethodPost                   @"POST"
 
-#define vCfgDefaultViewabilityViThreshold           @"[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]"
-#define vCfgDefaultViewabilityAuThreshold           @"[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]"
-#define vCfgDefaultViewabilityFrameRefreshInterval  @"1000" // in ms = 1 sec
-#define vCfgDefaultViewabilityTickOffset            @"3" // in seconds
-#define vCfgDefaultViewabilityJsRefresh             86400 // in seconds = 24 hours
-#define vCfgDefaultMaxVATimeSeriesCacheRefreshIntervalCount 10
-
 #define vInactivePeriod                 420 // 7 min
 
 #define vCfgDefaultRequestMethod                    @"GET"
@@ -78,15 +71,16 @@
 #define vDefaultContentTypesList        @"content,radio"
 #define vDefaultStaticTypesList         @"static,text"
 #define vDefaultAdTypesList             @"preroll,midroll,postroll,ad"
-#define vDefaultID3DelimiterValue       [NlsUtil uriEncodedString:@"|"]
+#define vDefaultID3DelimiterValue       [NlsStrUtil uriEncodedString:@"|"]
 #define vDefaultEvtDataDelimiterValue        @"~"
 #define vDefaultStationId               @"defaultStationId"
 #define vDefaultUserAgent               @"NLSDK (|!nol_osversion!|,|! nol_devtypeid!| Build/|!nol_sdkver!|) |!nol_appid!|/|!nol_appver!|"
 #define vDefaultShortPingPrefix         @"S"
 #define vDefaultDurationPingPrefix      @"D"
 #define vDefaultViewPingPrefix          @"V"
+#define vDefaultViewabilityPingPrefix   @"VW"
 #define vDefaultPauseEventTimeoutPlayhead @"15"
-#define vDefaultPauseEventTimeoutID3      @"30"
+#define vDefaultPauseEventTimeoutID3      @"15"
 #define vDefaultLaunchPingLimit           @"200"
 #define vDefaultUAIDRefreshInterval       @"86400"
 #define vDefaultFPIDRefreshInterval       180
@@ -148,13 +142,6 @@ typedef NS_ENUM(unsigned int, ConfigStatus) {
     ServerError // valid config with error message
 };
 
-typedef NS_ENUM(unsigned int, ViewabilityStatus) {
-    ViewabilityStatusUndefined,
-    ViewabilityStatusDisabled,
-    ViewabilityStatusJsLoading,
-    ViewabilityStatusReady
-};
-
 @protocol NlsConfigManagerDelegate <NSObject>
 - (void)obtainConfigCompletedWithResult:(BOOL)success;
 @end
@@ -167,7 +154,6 @@ typedef NS_ENUM(unsigned int, ViewabilityStatus) {
 @property (nonatomic, readonly) NSInteger logReportInterval;
 @property (nonatomic, readonly) NSInteger configRefreshInterval;
 @property (nonatomic, readonly) NSString *requestMethod;
-@property (nonatomic, readonly) ViewabilityStatus viewabilityStatus;
 @property (nonatomic, readonly) NSString *deviceUserAgent;
 @property (nonatomic) BOOL cancelled;
 @property (nonatomic, weak) id<NlsConfigManagerDelegate> delegate;

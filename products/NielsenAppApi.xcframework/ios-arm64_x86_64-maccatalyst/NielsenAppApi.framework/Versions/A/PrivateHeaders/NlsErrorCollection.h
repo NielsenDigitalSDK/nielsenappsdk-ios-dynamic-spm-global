@@ -30,7 +30,8 @@ typedef NS_ENUM(unsigned int, LogCode)
     LogCodeInvalidPlayheadPosition, // 15. Invalid playhead position
     LogCodeLongAd, // 16. Long ad
     LogCodeIncorrectSfcode, // 17. Incorrect client supplied sfcode
-    LogCodeHemUidExceedLimit // 18. Exceeded limit of nol_hemUidCharLimit characters
+    LogCodeHemUidExceedLimit, // 18. Exceeded limit of nol_hemUidCharLimit characters
+    LogCodeViewabilityUnableFindView // 19. Viewability unable to find a view with the specificed tag
 };
 
 typedef NS_ENUM(unsigned int, LogCodeImmediate)

@@ -11,6 +11,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class NlsUtil;
 /// Enumeration contains all the types of log levels
 /// supported by NlsLogger. If some level is enabled then
 /// all the log mnessages with this level and higher level
