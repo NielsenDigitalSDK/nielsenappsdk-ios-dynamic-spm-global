@@ -58,7 +58,7 @@ typedef NS_ENUM(NSUInteger, NlsSessionStopType) {
 @property(nonatomic, strong) dispatch_queue_t dataProcessQueue;
 @property(nonatomic) NielsenProductType processorType;
 @property(nonatomic, weak) id<NlsBaseDataProcessorDelegate> delegate;
-@property(nonatomic, strong) NSArray *requiredMetadataParams;
+@property(nonatomic, strong) NSMutableArray *requiredMetadataParams;
 @property(nonatomic, readonly) NSDictionary* lastPingDictionary;
 @property(nonatomic) BOOL isViewabilityProcessor;
 
@@ -71,6 +71,7 @@ typedef NS_ENUM(NSUInteger, NlsSessionStopType) {
 - (void)processMetadata:(NSDictionary *)metadata withDcrGuid:(NSString *)dcrGuid andArrivalTime:(NSTimeInterval)arrivalTime;
 - (void)processOTT:(NSDictionary *)ottInfo withArrivalTime:(NSTimeInterval)arrivalTime;
 - (void)processShutdownWithArrivalTime:(NSTimeInterval)arrivalTime forceUpload:(BOOL)forceUpload;
+- (void)processBackgroundWithArrivalTime:(NSTimeInterval)arrivalTime;
 - (void)processStopForType:(NlsSessionStopType)sessionStopType withArrivalTime:(NSTimeInterval)arrivalTime;
 - (void)processEndWithArrivalTime:(NSTimeInterval)arrivalTime internalCall:(BOOL)internal;
 - (void)processMuteChanged:(BOOL)value withArrivalTime:(NSTimeInterval)arrivalTime;
@@ -80,9 +81,11 @@ typedef NS_ENUM(NSUInteger, NlsSessionStopType) {
 - (void)processPauseWithArrivalTime:(NSTimeInterval)arrivalTime;
 - (void)processAppDisable:(BOOL)appDisable;
 - (void)processAdWithArrivalTime:(NSTimeInterval)arrivalTime;
+- (void)processStaticEndWithArrivalTime:(NSTimeInterval)arrivalTime;
 + (NielsenProductType)processorTypeForProduct:(NSString*)product;
 - (void)logPingWithDuration:(int)duration;
 - (BOOL)validateInputMetadata:(NSDictionary *)inputData withType:(NlsContentType)inputType;
 - (void)flushPendingWithArrivalTime:(NSTimeInterval)arrivalTime immediately:(BOOL)immediately;
+- (NSString *)parseFormattedString:(NSString *)formattedString;
 
 @end

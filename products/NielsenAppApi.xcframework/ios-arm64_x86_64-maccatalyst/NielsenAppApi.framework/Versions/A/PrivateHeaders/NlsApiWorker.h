@@ -32,7 +32,7 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 @class NlsUtil;
 @class NlsVaViewabilityStorage;
 @class NlsVaViewabilityTracker;
-@class NlsKeychainStorage;
+@class NlsUserDefaultsStorage;
 @class NielsenAppApi;
 
 @class NlsCATLogger;
@@ -49,7 +49,7 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 
 @property (strong, readonly) NlsConfigManager *config;
 @property (strong, readonly) NlsDataTransfer *dataTransfer;
-@property (strong, readonly) NlsKeychainStorage *keychainStorage;
+@property (strong, readonly) NlsUserDefaultsStorage *userDefaultsStorage;
 @property (strong, readonly) NlsCache *meterDatabase;
 @property (strong, readonly) NlsDeviceIdAccess *deviceIdAccess;
 @property (strong, readonly) NlsErrorReporter *errorReporter;
@@ -88,9 +88,11 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 - (void)sendID3:(NSString *)payload;
 - (void)playheadPosition:(long long)playheadPosition;
 - (void)sessionForeground;
+- (void)sessionBackground;
 - (void)sessionShutdown;
 - (void)sessionStopForType:(NlsSessionStopType)sessionStopType;
 - (void)sessionEnd;
+- (void)sessionStaticEnd;
 - (void)userOptOut:(BOOL)optOut;
 
 - (void)restartConfigRetryTimer;

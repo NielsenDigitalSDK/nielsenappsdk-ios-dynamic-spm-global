@@ -17,9 +17,6 @@
 //
 #define VIVersion @"1.0.0"
 
-
-#define kKeychainIdentifier @"NielsenID3Meter"
-
 /**
  Nielsen web view commands
  */
