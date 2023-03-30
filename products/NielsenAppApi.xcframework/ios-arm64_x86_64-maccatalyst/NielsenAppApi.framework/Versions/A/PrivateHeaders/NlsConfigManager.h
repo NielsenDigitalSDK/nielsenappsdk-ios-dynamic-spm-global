@@ -131,7 +131,9 @@ typedef NS_ENUM(int, NielsenMeterMessageTypes) {
     MuteMsgType,
     OptOutMsgType,
     SessionMsgType,
-    EMMMsgType
+    EMMMsgType,
+    CloseMsgType,
+    StaticEndMsgType
 };
 
 typedef NS_ENUM(unsigned int, ConfigStatus) {

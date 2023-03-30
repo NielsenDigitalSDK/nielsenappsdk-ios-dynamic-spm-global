@@ -143,6 +143,11 @@
 - (void)sendID3:(nonnull NSString *)data;
 
 /**
+ Force to send a new DCR static view and DCR static duration for previous session when provided loadMetadata is same.
+ */
+- (void)staticEnd;
+
+/**
  Reporting OTT update event to the SDK.
  @param ottInfo - a JSON formatted NSString object or NSDictionary object that includes details about over-the-top status and device details. Check documentation for proper key naming and values.
  */
