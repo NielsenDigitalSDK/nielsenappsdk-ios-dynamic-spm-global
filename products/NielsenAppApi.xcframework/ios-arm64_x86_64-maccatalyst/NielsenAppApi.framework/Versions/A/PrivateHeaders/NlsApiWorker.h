@@ -54,7 +54,7 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 @property (strong, readonly) NlsDeviceIdAccess *deviceIdAccess;
 @property (strong, readonly) NlsErrorReporter *errorReporter;
 @property (strong, readonly) NlsApiStatusManager *apiStatusManager;
-@property (strong, readonly) NlsStorage *storage;
+@property (strong, readwrite) NlsStorage *storage;
 @property (strong, readonly, nullable) NlsLogger *logger;
 @property (strong, readonly) NlsCATLogger *catLogger;
 @property (strong, readonly, nonnull) NlsMappingDictionary *globals;

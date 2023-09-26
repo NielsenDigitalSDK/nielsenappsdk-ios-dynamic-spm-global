@@ -12,7 +12,9 @@
 #import <Foundation/Foundation.h>
 
 // Config URL template
-#define vCfgDefaultConfigUrl @"https://cdn-gl.imrworldwide.com/conf/|!nol_appid!|.json?devtypid=|!nol_devtypeid!|&devid=|![nol_deviceId]!|&devname=|!(nol_devname)!|&osver=|!(nol_osversion)!|&sysname=|!(nol_sysname)!|&bid=|!nol_bundleID!|"
+#define vNonTrackingDomainDefaultName   @"nmrodam.com"
+#define vTrackingDomainDefaultName   @"imrworldwide.com"
+#define vCfgDefaultConfigUrl @"https://cdn-gl."vNonTrackingDomainDefaultName"/conf/|!nol_appid!|.json?devtypid=|!nol_devtypeid!|&devid=&devname=|!(nol_devname)!|&osver=|!(nol_osversion)!|&sysname=|!(nol_sysname)!|&bid=|!nol_bundleID!|"
 
 // this page either HTML for mobile or JS for appleTV
 #define kDefaultOptOutURLFormatUserChoice @"https://priv-policy.imrworldwide.com/priv/|!nol_devicetype!|/|![nol_localeCountryCode]!|/|![nol_language]!|/optout_legacy.html"
@@ -37,6 +39,7 @@
 #define vDefaultOfflinePingLimit        @"300"
 #endif
 #define vDefaultCreditValue             30
+#define vDefaultMaxPendingPingRetry     @"5"
 #define vDefaultSegLength               5
 #define vDefaultSegDuration             60
 #define vDefaultSegmentNumber           0
