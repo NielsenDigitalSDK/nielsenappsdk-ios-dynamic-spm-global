@@ -57,7 +57,9 @@
 		</dict>
 	</array>
 	<key>NSPrivacyTrackingDomains</key>
-	<array/>
+	<array>
+		<string>imrworldwide.com</string>
+	</array>
 	<key>NSPrivacyTracking</key>
 	<true/>
 </dict>

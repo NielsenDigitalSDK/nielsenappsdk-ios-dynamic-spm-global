@@ -94,7 +94,7 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 - (void)sessionEnd;
 - (void)sessionStaticEnd;
 - (void)userOptOut:(BOOL)optOut;
-
+- (NSString *)userOptoutSharedStatus;
 - (void)restartConfigRetryTimer;
 - (void)refreshDeviceIdAndFireUAIDPings:(BOOL)fireUAIDPings;
 - (void)newSessionStartedForProcessor:(NlsBaseDataProcessor *)processor;
