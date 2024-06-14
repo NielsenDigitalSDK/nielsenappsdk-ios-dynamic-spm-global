@@ -13,12 +13,13 @@
 
 // Config URL template
 #define vNonTrackingDomainDefaultName   @"nmrodam.com"
-#define vTrackingDomainDefaultName   @"imrworldwide.com"
-#define vCfgDefaultConfigUrl @"https://cdn-gl."vNonTrackingDomainDefaultName"/conf/|!nol_appid!|.json?devtypid=|!nol_devtypeid!|&devid=&devname=|!(nol_devname)!|&osver=|!(nol_osversion)!|&sysname=|!(nol_sysname)!|&bid=|!nol_bundleID!|"
+#define vTrackingDomainDefaultName   @"vtwenty.com"
+#define vLegacyTrackingDomainDefaultName   @"imrworldwide.com"
+#define vCfgDefaultConfigUrl @"https://cdn-gl."vNonTrackingDomainDefaultName"/conf/|!nol_appid!|.json?devtypid=|!nol_devtypeid!|&devname=|!(nol_devname)!|&osver=|!(nol_osversion)!|&sysname=|!(nol_sysname)!|&bid=|!nol_bundleID!|"
 
 // this page either HTML for mobile or JS for appleTV
-#define kDefaultOptOutURLFormatUserChoice @"https://priv-policy.imrworldwide.com/priv/|!nol_devicetype!|/|![nol_localeCountryCode]!|/|![nol_language]!|/optout_legacy.html"
-#define kDefaultOptOutURLFormatIDFA @"https://priv-policy.imrworldwide.com/priv/|!nol_devicetype!|/|![nol_localeCountryCode]!|/|![nol_language]!|/optout.html"
+#define kDefaultOptOutURLFormatUserChoice @"https://priv-policy."vTrackingDomainDefaultName"/priv/|!nol_devicetype!|/|![nol_localeCountryCode]!|/|![nol_language]!|/optout_legacy.html"
+#define kDefaultOptOutURLFormatIDFA @"https://priv-policy."vTrackingDomainDefaultName"/priv/|!nol_devicetype!|/|![nol_localeCountryCode]!|/|![nol_language]!|/optout.html"
 
 #define vCidNullDefault                 @"X100zdCIGeIlgZnkYj6UvQ=="
 #define vVidTypeAdValue                 @"ad"
