@@ -88,6 +88,11 @@
 #define vDefaultLaunchPingLimit           @"200"
 #define vDefaultUAIDRefreshInterval       @"86400"
 #define vDefaultFPIDRefreshInterval       180
+#define vDefaultIntervalThresholdDTVR   90
+#define vDefaultPauseEventTimeOutDTVR   @"15"
+#define vDefaultDTVRDataEvents          @"play,pause,resume,stop,mute,rewind,forward,tsv,admodel,flush"
+#define vDefaultSegmentTimerDuration    60
+#define vDefaultSubminuteTimeout    300
 
 #define kProductConfigID3RawValue @"id3"
 #define kProductConfigMTVRValue @"mtvr"
@@ -99,6 +104,7 @@
 #define kProductConfigDPRID3Value @"dprid3"
 #define kProductConfigDCRVideoValue @"dcrvideo"
 #define kProductConfigVRIValue @"vrivideo"
+#define kProductConfigMTVRSubminuteValue @"mtvrsubminute"
 
 #define kCadenceConfigIntervalValue @"interval"
 #define kCadenceConfigEpisodeValue @"episode"
@@ -137,7 +143,8 @@ typedef NS_ENUM(int, NielsenMeterMessageTypes) {
     SessionMsgType,
     EMMMsgType,
     CloseMsgType,
-    StaticEndMsgType
+    StaticEndMsgType,
+    FlushOffline
 };
 
 typedef NS_ENUM(unsigned int, ConfigStatus) {

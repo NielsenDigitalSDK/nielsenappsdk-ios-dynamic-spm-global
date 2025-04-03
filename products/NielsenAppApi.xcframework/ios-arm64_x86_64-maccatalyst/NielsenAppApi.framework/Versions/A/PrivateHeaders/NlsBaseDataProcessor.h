@@ -21,6 +21,7 @@ typedef NS_ENUM(unsigned int, NielsenProductType) {
     DprPatternProduct,
     DprId3PatternProduct,
     MtvrPatternProduct,
+    MtvrSubminutePatternProduct,
     OCRProduct,
     LegacyProduct,
     DrmPatternProduct,
@@ -45,6 +46,12 @@ typedef NS_ENUM(NSUInteger, NlsSessionStopType) {
     NlsSessionStopTypeOnAdInterruption,
     NlsSessionStopTypeOnAssetIdChange,
     NlsSessionStopTypeOnStop
+};
+
+typedef NS_ENUM(NSUInteger, NlsPingType) {
+    NlsPingTypeOnline = 0,
+    NlsPingTypeOffline,
+    NlsPingTypeLastOffline,
 };
 
 @class NlsBaseDataProcessor;
@@ -100,6 +107,8 @@ typedef NS_ENUM(NSUInteger, NlsSessionStopType) {
 @property (nonatomic) int segmentLength;
 @property (nonatomic) int segmentBaseDuration;
 @property (nonatomic) int creditValue;
+@property (nonatomic) int segmentTimerDuration;
+@property (nonatomic) int subMinuteTimeout;
 @property (nonatomic, strong) NSString *defaultBreakout;
 @property (nonatomic, strong) NSString *creditFlag;
 @property (nonatomic, strong) NSString *segmentPrefix;
@@ -160,5 +169,5 @@ typedef NS_ENUM(NSUInteger, NlsSessionStopType) {
 + (NielsenProductType)processorTypeForProduct:(NSString*)product;
 - (void)logPingWithDuration:(int)duration;
 - (NSString *)parseFormattedString:(NSString *)formattedString;
-
+- (void)processOfflineFlushWithArrivalTime:(NSTimeInterval)arrivalTime;
 @end

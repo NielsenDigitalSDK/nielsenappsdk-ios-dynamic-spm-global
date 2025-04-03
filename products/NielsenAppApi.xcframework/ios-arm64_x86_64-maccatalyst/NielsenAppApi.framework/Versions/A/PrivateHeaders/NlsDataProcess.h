@@ -22,7 +22,6 @@
 @property (nonatomic) BOOL contentPlaybackEnded;
 @property (nonatomic) NlsContentType content;
 @property (nonatomic) NSInteger lastContentPlayhead;
-
 // two variables below are introduced in order to implement
 // non ad view pattern pausing on ad interruption
 @property (nonatomic) NSString *previousNonAdActiveContent;
