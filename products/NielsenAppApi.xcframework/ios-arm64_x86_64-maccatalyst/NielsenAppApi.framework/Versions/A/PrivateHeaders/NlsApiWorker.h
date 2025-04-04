@@ -30,6 +30,8 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 @class NlsDeviceIdAccess;
 @class NlsMappingDictionary;
 @class NlsUtil;
+@class NlsTSVResponse;
+@class NlsTSVRequestManager;
 @class NlsVaViewabilityStorage;
 @class NlsVaViewabilityTracker;
 @class NlsUserDefaultsStorage;
@@ -60,10 +62,12 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 @property (strong, readonly, nonnull) NlsMappingDictionary *globals;
 @property (strong, readonly, nonnull) NlsFPIDManager *fpidManager;
 @property (strong, readonly) NlsDataProcessRequestManager *dataProcessRequestManager;
+@property (strong, readonly) NlsTSVRequestManager *tsvRequestManager;
 @property (strong, readonly) NlsVaViewabilityStorage *viewabilityStorage;
 @property (strong, readonly) NlsVaViewabilityTracker *viewabilityTracker;
+@property (strong, readwrite, nonnull) NSDictionary *cmsMapping;
 
-@property (strong, readonly) NSDictionary *appInfoDict;
+@property (strong, readwrite) NSDictionary *appInfoDict;
 
 @property (nonatomic, readonly) BOOL isOnline;
 

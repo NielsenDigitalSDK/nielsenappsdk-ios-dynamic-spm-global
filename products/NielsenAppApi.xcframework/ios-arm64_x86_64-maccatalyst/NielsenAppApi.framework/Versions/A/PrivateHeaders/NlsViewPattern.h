@@ -48,6 +48,7 @@ typedef NS_ENUM(unsigned int, SessionType)
               winSlotSize:(int)inSzWinSlot
             sendQualifier:(int)sendQualifier
               sessionType:(SessionType)inSessionType
+              processorType:(int)inProcessorType
               creditPause:(BOOL)creditPause
              minThreshold:(int)minThreshold
              maxThreshold:(int)maxThreshold
@@ -72,5 +73,7 @@ typedef NS_ENUM(unsigned int, SessionType)
 - (void)resetOnStationChange;
 
 - (void)resetOnOttTransition;
+
+@property (nonatomic) BOOL didInterrupt;
 
 @end

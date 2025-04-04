@@ -113,6 +113,11 @@
 @property (readonly, nonnull) NSString *nielsenId __attribute((deprecated(("nielsenId is not used by the SDK anymore"))));
 
 /**
+ Retrieve Device ID
+ */
+@property (readonly, nonnull) NSString *deviceId;
+
+/**
  Retrieve Demographic ID
  */
 @property (readonly, nonnull) NSString *demographicId;
