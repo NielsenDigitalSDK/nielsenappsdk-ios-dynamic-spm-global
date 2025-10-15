@@ -15,6 +15,8 @@
 #import "NlsDataTransfer.h"
 #import "NlsConfigManager.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(unsigned int, NielsenApiType) {
     NielsenApiTypeTrackEvent,
     NielsenApiTypeLegacy
@@ -42,30 +44,30 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 
 @interface NlsApiWorker : NSObject <NlsBaseDataProcessorDelegate>
 
-@property (nonatomic, strong, readonly) dispatch_queue_t dataTransferQueue;
-@property (nonatomic, strong, readonly) dispatch_queue_t dataCacheQueue;
-@property (nonatomic, strong, readonly) dispatch_queue_t dataConfigQueue;
-@property (nonatomic, strong, readonly) dispatch_queue_t dataGetTsvQueue;
+@property (nonatomic, strong, readonly, nullable) dispatch_queue_t dataTransferQueue;
+@property (nonatomic, strong, readonly, nullable) dispatch_queue_t dataCacheQueue;
+@property (nonatomic, strong, readonly, nullable) dispatch_queue_t dataConfigQueue;
+@property (nonatomic, strong, readonly, nullable) dispatch_queue_t dataGetTsvQueue;
 
-@property (strong, readonly) NSThread *workerThread;
+@property (strong, readonly, nullable) NSThread *workerThread;
 
-@property (strong, readonly) NlsConfigManager *config;
-@property (strong, readonly) NlsDataTransfer *dataTransfer;
-@property (strong, readonly) NlsUserDefaultsStorage *userDefaultsStorage;
-@property (strong, readonly) NlsCache *meterDatabase;
-@property (strong, readonly) NlsDeviceIdAccess *deviceIdAccess;
-@property (strong, readonly) NlsErrorReporter *errorReporter;
-@property (strong, readonly) NlsApiStatusManager *apiStatusManager;
-@property (strong, readwrite) NlsStorage *storage;
+@property (strong, readonly, nullable) NlsConfigManager *config;
+@property (strong, readonly, nullable) NlsDataTransfer *dataTransfer;
+@property (strong, readonly, nullable) NlsUserDefaultsStorage *userDefaultsStorage;
+@property (strong, readonly, nullable) NlsCache *meterDatabase;
+@property (strong, readonly, nullable) NlsDeviceIdAccess *deviceIdAccess;
+@property (strong, readonly, nullable) NlsErrorReporter *errorReporter;
+@property (strong, readonly, nullable) NlsApiStatusManager *apiStatusManager;
+@property (strong, readwrite, nullable) NlsStorage *storage;
 @property (strong, readonly, nullable) NlsLogger *logger;
-@property (strong, readonly) NlsCATLogger *catLogger;
-@property (strong, readonly, nonnull) NlsMappingDictionary *globals;
-@property (strong, readonly, nonnull) NlsFPIDManager *fpidManager;
+@property (strong, readonly, nullable) NlsCATLogger *catLogger;
+@property (strong, readonly) NlsMappingDictionary *globals;
+@property (strong, readonly) NlsFPIDManager *fpidManager;
 @property (strong, readonly) NlsDataProcessRequestManager *dataProcessRequestManager;
 @property (strong, readonly) NlsTSVRequestManager *tsvRequestManager;
-@property (strong, readonly) NlsVaViewabilityStorage *viewabilityStorage;
-@property (strong, readonly) NlsVaViewabilityTracker *viewabilityTracker;
-@property (strong, readwrite, nonnull) NSDictionary *cmsMapping;
+@property (strong, readonly, nullable) NlsVaViewabilityStorage *viewabilityStorage;
+@property (strong, readonly, nullable) NlsVaViewabilityTracker *viewabilityTracker;
+@property (strong, readwrite) NSDictionary *cmsMapping;
 
 @property (strong, readwrite) NSDictionary *appInfoDict;
 
@@ -75,17 +77,17 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 
 @property (assign) BOOL appDisableApi;
 
-@property (nonatomic, weak) NielsenAppApi *sdkInstance;
+@property (nonatomic, weak, nullable) NielsenAppApi *sdkInstance;
 
 - (instancetype)initWithAppInfo:(NSDictionary *)appInfoDict
                         apiType:(NielsenApiType)apiType
                      instanceId:(NSString *)instanceId
-                         logger:(NlsLogger *)logger
+                         logger:(nullable NlsLogger *)logger
                apiStatusManager:(NlsApiStatusManager *)apiStatusManager
-                        storage:(NlsStorage *)storage
-           catLoggerEventsOwner:(id<NlsCATLoggerEventOwner>)catLoggerEventsOwner;
+                        storage:(nullable NlsStorage *)storage
+           catLoggerEventsOwner:(nullable id<NlsCATLoggerEventOwner>)catLoggerEventsOwner;
 
-- (void)startViewabilityTrackerWith:(NSInteger)viewTag withParentView:(UIView *)parentView friendlyObstructions:(NSArray<NSNumber *> *)friendlyObstructions;
+- (void)startViewabilityTrackerWith:(NSInteger)viewTag withParentView:(UIView *)parentView friendlyObstructions:(nullable NSArray<NSNumber *> *)friendlyObstructions;
 - (void)sessionStart:(NSDictionary *)metadata;
 - (void)loadMetadata:(NSDictionary *)metadata;
 - (void)updateOTT:(NSDictionary *)ottInfo;
@@ -105,3 +107,5 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 - (void)answerAliveWithIdentifier:(NSInteger)identifier appId:(NSString *)appId;
 
 @end
+
+NS_ASSUME_NONNULL_END

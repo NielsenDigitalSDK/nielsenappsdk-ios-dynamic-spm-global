@@ -9,7 +9,17 @@
  *
  */
 
+#import <os/log.h>
 #import <Foundation/Foundation.h>
+
+#define LOG_WITH_TIMESTAMP(message) \
+os_log_info([NlsLogger sharedLogHandle], "[%lld] %{public}@", (long long)([[NSDate date] timeIntervalSince1970]), message);
+
+#define NLS_LOG_INFO(format, ...) \
+os_log_info([NlsLogger sharedLogHandle], format, ##__VA_ARGS__)
+
+#define NLS_LOG_DEBUG(format, ...) \
+os_log_debug([NlsLogger sharedLogHandle], "%{public}" format, ##__VA_ARGS__)
 
 @class NlsUtil;
 /// Enumeration contains all the types of log levels
@@ -56,6 +66,7 @@ typedef NS_ENUM(unsigned int, LogMessageLevel) {
 @property (nonatomic, readonly) BOOL enabled;
 @property (nonatomic) BOOL fileLoggingEnabled;
 
++ (os_log_t)sharedLogHandle;
 // method takes variable numbers of arguments, the format string and the variable arguments are expected
 - (void)logWithLevel:(LogMessageLevel)messageLevel format:(NSString *)format, ...;
 
