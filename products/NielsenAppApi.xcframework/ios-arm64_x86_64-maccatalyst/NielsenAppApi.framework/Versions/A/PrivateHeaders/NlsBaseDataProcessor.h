@@ -144,7 +144,6 @@ typedef NS_ENUM(NSUInteger, NlsPingType) {
 - (void)resetMetadataInfo;
 - (BOOL)isDurationPingFromDictionary:(NSDictionary *)dictionary;
 - (void)configureCMSInfoDictionary:(NlsMappingDictionary *)inputCmsDictionary;
-- (NSDictionary *)viewabilityDictionary;
 
 - (instancetype)initWithWorker:(id)meterWorker withPid:(NSInteger)pid;
 - (BOOL)validateInputMetadata:(NSDictionary *)inputData withType:(NlsContentType)inputType;

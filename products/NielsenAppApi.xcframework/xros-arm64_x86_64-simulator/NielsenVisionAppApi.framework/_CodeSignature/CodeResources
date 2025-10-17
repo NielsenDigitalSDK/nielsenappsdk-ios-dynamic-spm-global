@@ -22,51 +22,51 @@
 		</data>
 		<key>Headers/NielsenVisionAppApi-Swift.h</key>
 		<data>
-		zZcYQ7AUKGQDC51GCj0cXaGzmow=
+		4x8U0HEHDyPdHlvxzCIdeuAtQHU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kouczZZwJQ1PJ+IRHLT5UYvmFoY=
+		DAn7vMh6bVyLGHzIpbTQIGttXdY=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-		PRVr1pXqUzhXh0OETL2Td6Fd9Hw=
+		TdGTt1sogCXadNZJ/jqytsrWFRY=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		cD+7U8eYoZTvUiijZQGNJ6gidJ8=
+		hE4qsvmWKQOXXEb2XMnTY/yoImw=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<data>
-		H1E/TODRaJJ88ss09BbDoOBdTIo=
+		YU11nsDln1j5R7H2z37kfInJoMQ=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		cD+7U8eYoZTvUiijZQGNJ6gidJ8=
+		hE4qsvmWKQOXXEb2XMnTY/yoImw=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		KBm3MK2Ro5mj32bJQrZTw4ukN+Q=
+		K47+pNp1NqY7/iWJRUjUAy+2J30=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
-		PRVr1pXqUzhXh0OETL2Td6Fd9Hw=
+		TdGTt1sogCXadNZJ/jqytsrWFRY=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		X3iKBhi9dd1x2On/mHyvAE4GjYw=
+		kYUApHw+fY3rtzoaNuDTBlRWPZA=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<data>
-		aVFfRi6/eGwZurbXkFuUqq8itcA=
+		dO6Ri4KXMdMdbopHJs13mW5IN78=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		X3iKBhi9dd1x2On/mHyvAE4GjYw=
+		kYUApHw+fY3rtzoaNuDTBlRWPZA=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		BJmml7lPe4K9Z/2VSsRc4hDGPmo=
+		BqaagNB78kq2F2cOkqFCI11vVyc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>PrivateHeaders/NlsApiWorker.h</key>
 		<data>
-		yLmwld+J4SuUKgNvEph+g9UtKwU=
+		VXKrAxTsZgaBrk4cLzhzHE4/lRE=
 		</data>
 		<key>PrivateHeaders/NlsBaseDataProcessor.h</key>
 		<data>
-		5QkGwZeGCS7IZ5HCR7+Ro76eH6c=
+		7dLE6lvEfff9EsV1rpb045wxk4c=
 		</data>
 		<key>PrivateHeaders/NlsCache.h</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>PrivateHeaders/NlsLogger.h</key>
 		<data>
-		lWbK72Fl28SMmTYVcHGIDOfEc8w=
+		NiG4G25Z16I9owFn19y7FPeXsh4=
 		</data>
 		<key>PrivateHeaders/NlsTSVRequest.h</key>
 		<data>
@@ -183,77 +183,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kv0esHPt1+CKOSMbWxgVJNH5puoLd1XJyjXcouupUAk=
+			y7wqzcDm9qJP+IzDE1L9nagORjuZZQy610aL8Rwj14g=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z5s2C4BQBGHzBa+fiaJijyUO1g8bciBn5E0nw0brUJ4=
+			LF/WjWY1R1TipYW6c4BM93ey/1Rh0MIXJ1fDqiamWBY=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s+rZaRZNdAftyVqqGb8N6rdWBsXfweNaoEpRK8WP9Mc=
+			7pMcXWa+oRSSzSHOkwRtZfsFgVH/wixk5sAjrp3da14=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J4eI1Uf8kemKKvO0xysIODbArSKJ3lHZYvyQIm78T5c=
+			t8bAca3bFpDcRFfDCH8K2j5GyCIbRGrSD0PhaYmv0IE=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s+rZaRZNdAftyVqqGb8N6rdWBsXfweNaoEpRK8WP9Mc=
+			7pMcXWa+oRSSzSHOkwRtZfsFgVH/wixk5sAjrp3da14=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0p60f6t7K0r9MwCYslh+mf0+AtdNm0yYGORQdcVct1U=
+			hTwuE/Y4gLJvRpywb4ArTr3xmQyDwKsqpxa/wacdBuQ=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z5s2C4BQBGHzBa+fiaJijyUO1g8bciBn5E0nw0brUJ4=
+			LF/WjWY1R1TipYW6c4BM93ey/1Rh0MIXJ1fDqiamWBY=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yjXk9JetJmOQIB4kLADBLPDPubC8pCm3QaGIvc+C//U=
+			S404KAsp9jrOWTUIgUAnFRV3EzTkeS+x4fcDvdch/VE=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/A8WIBzHsAdfHxHkVoVtCJSh9MpAJVTQ72yJpWNG85Y=
+			o67VPBYGQm/GcGHAhf0pEX9wZLi6w8sDyZ3A4xm+hgw=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yjXk9JetJmOQIB4kLADBLPDPubC8pCm3QaGIvc+C//U=
+			S404KAsp9jrOWTUIgUAnFRV3EzTkeS+x4fcDvdch/VE=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KE58C2tyS2PsZKhDhoNnDpUr3Ap4dGJ1nBM3EncsW54=
+			mgeW9jxHAnQiCUh4fsFC4MPv/Za/HxqTwEiEahLgz+g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -281,14 +281,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nhhgc9rcnkgAJV3TlCt+zxM5UaKOfTIy1h0J+qSf63s=
+			08QLPftUnqO/ebEl9Jc2K4Tqb5YXuoVnaY58+tN1xgc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/NlsBaseDataProcessor.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			196lgaxH3geGn5hZ9fy/sM6B4AUqrxnCo03kdBIkFo8=
+			ZAR6QEZdc2hL2hlr19+Htbu+xtxRj/aqgnAdFy6Wb/k=
 			</data>
 		</dict>
 		<key>PrivateHeaders/NlsCache.h</key>
@@ -372,7 +372,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G/UiRVmcZglErGEQBBQkp+rZc4IlsJz2Yx3RfSm4cMk=
+			JJijRc6KCcqWrZw//0aPKy/6ic08WNze+Ps4R/EBt9g=
 			</data>
 		</dict>
 		<key>PrivateHeaders/NlsTSVRequest.h</key>
