@@ -72,6 +72,7 @@ typedef NS_ENUM(unsigned int, NielsenApiType) {
 @property (strong, readwrite) NSDictionary *appInfoDict;
 
 @property (nonatomic, readonly) BOOL isOnline;
+@property (assign) BOOL isTrackViewabilityAPITriggered;
 
 @property (nonatomic, strong, readonly) NSString *optOutURLString;
 

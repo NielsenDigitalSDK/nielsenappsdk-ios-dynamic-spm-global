@@ -42,6 +42,7 @@ typedef NS_ENUM(unsigned int, SessionType)
 @property (nonatomic) NSTimeInterval lastViewTime;
 @property (nonatomic, readonly) int sessionTotalViewedSeconds;
 @property (nonatomic, readonly) int segmentTotalViewedSeconds;
+@property (nonatomic, readwrite) int segmentTotalViewedForAdSeconds;
 
 - (id)initWithSegmentSize:(int)inSzSeg
                  slotSize:(int)inSzSlot
