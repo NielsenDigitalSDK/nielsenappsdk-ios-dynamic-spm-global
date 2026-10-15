@@ -1,7 +1,7 @@
 /**
 * App SDK Application
 *
-* Copyright (C) 2016, The Nielsen Company (US) LLC. All Rights Reserved.
+* Copyright (C) 2026, The Nielsen Company (US) LLC. All Rights Reserved.
 *
 * Software contains the Confidential Information of Nielsen and is subject to your relevant agreements with Nielsen.
 *
@@ -16,9 +16,13 @@
 /**
  Nielsen web view close command
  */
-#define kNielsenWebClose @"nielsen://close"
 
+@class NielsenAppApi;
 @protocol NielsenAppApiDelegate;
+
+#if !defined(NIELSENAPPAPI_SWIFT_GENERATED) && !__has_include("NielsenAppApi-Swift.h")
+
+#define kNielsenWebClose @"nielsen://close"
 
 @interface NielsenAppApi : NSObject
 
@@ -219,4 +223,6 @@
 - (void)nielsenAppApi:(nonnull NielsenAppApi *)appApi errorOccurred:(nonnull NSDictionary *)error;
 
 @end
+
+#endif /* !defined(__swift__) && !defined(NIELSENAPPAPI_SWIFT_GENERATED) */
 
