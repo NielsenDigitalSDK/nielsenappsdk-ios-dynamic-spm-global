@@ -14,6 +14,8 @@
 #import <WebKit/WebKit.h>
 #endif
 
+#if !defined(NIELSENAPPAPI_SWIFT_GENERATED) && !__has_include("NielsenAppApi-Swift.h")
+
 @interface NielsenAppSDKJSHandler : NSObject
 #if !TARGET_OS_TV
     /**
@@ -37,3 +39,5 @@ Handler for React Native JS message
 - (void)jsEventEmitter:(nullable id)jsEmitter didReceiveScriptMessage:(nullable id)message;
 
 @end
+
+#endif

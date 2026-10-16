@@ -10,143 +10,103 @@
 		</data>
 		<key>Headers/NielsenAppApi.h</key>
 		<data>
-		MpDskprANwm0kgrmWhpvSb7qS24=
+		2SsUHgV4kIO1wjJFq1BjQARUowg=
 		</data>
 		<key>Headers/NielsenAppSDKJSHandler.h</key>
 		<data>
-		JwQojJ6Bow/e1nJix5/IAetKCNM=
+		7sF4B9DQBW0V8MbTG3ddRoM9EFU=
 		</data>
 		<key>Headers/NielsenEventTracker.h</key>
 		<data>
-		Ypa3eOSDMZhNQYpPfxpM2uMvD0k=
+		ikqUhZtfLfSIlCL7x2X45klCbOc=
 		</data>
 		<key>Headers/NielsenVisionAppApi-Swift.h</key>
 		<data>
-		4x8U0HEHDyPdHlvxzCIdeuAtQHU=
+		jZJp5g3nT4gw8g8i2LBAg2XEweo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oaOeZQcIdWWaZDQaUrtWdfuQD5g=
+		2VKTESwoyKk8Zog0HWsr8gP0GKU=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-		J57quGE2ttCeGpKIlYbcCGv+rys=
+		cAT3hVwSIPZ3IGeO28OSvEV3dKk=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		hE4qsvmWKQOXXEb2XMnTY/yoImw=
+		eA0ID9U51SQIMz6Xqn7J/UUdxlU=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<data>
-		YU11nsDln1j5R7H2z37kfInJoMQ=
+		SjmwILrIHpKpvNqJAeH98+RMMgE=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		hE4qsvmWKQOXXEb2XMnTY/yoImw=
+		eA0ID9U51SQIMz6Xqn7J/UUdxlU=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		LJ/QjVib/WoQriHGs3GB0rX6gx8=
+		s1/dgStZ1zwoKMoo/baTAuuOdgk=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
-		J57quGE2ttCeGpKIlYbcCGv+rys=
+		cAT3hVwSIPZ3IGeO28OSvEV3dKk=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		kYUApHw+fY3rtzoaNuDTBlRWPZA=
+		Rx57ZORuhmVA6M65CpHSIoWjPwQ=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<data>
-		dO6Ri4KXMdMdbopHJs13mW5IN78=
+		n+YlInNjhTdOrSK5E6unmGzAWsk=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		kYUApHw+fY3rtzoaNuDTBlRWPZA=
+		Rx57ZORuhmVA6M65CpHSIoWjPwQ=
 		</data>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		TcYQCcgVynDU870Gt2MWQNTup9w=
+		hueVBmCkTcCEFEBbNRtvrw1wVbE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		31skntqgDmeFRdPWaIWR/9MGWXw=
+		Z6iubCfNzdcryZyr/sENdgE9GRE=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
 		dlpxlMH2wla3dr5gjF+guYMVq48=
 		</data>
+		<key>PrivateHeaders/NielsenAppApi+Priv.h</key>
+		<data>
+		4erlfvGqLfzOXGOBbAAuKBUjCPk=
+		</data>
+		<key>PrivateHeaders/NielsenAppApiEnums.h</key>
+		<data>
+		LmFRMvAR4YEazFXUESIH+/TZ38Q=
+		</data>
 		<key>PrivateHeaders/NielsenVisionAppApi.h</key>
 		<data>
 		uVerThI4zA7Uzc0ejSi5bvzJixs=
-		</data>
-		<key>PrivateHeaders/NlsApiWorker.h</key>
-		<data>
-		hNiCHydwMDJGps3xO6JpipZvOL8=
-		</data>
-		<key>PrivateHeaders/NlsBaseDataProcessor.h</key>
-		<data>
-		7dLE6lvEfff9EsV1rpb045wxk4c=
-		</data>
-		<key>PrivateHeaders/NlsCache.h</key>
-		<data>
-		ZDDVyymwMxWtPJJyB+l91Myg5FU=
-		</data>
-		<key>PrivateHeaders/NlsConfigManager.h</key>
-		<data>
-		35do3jqW+QGdRM31wdTwzarQNm0=
-		</data>
-		<key>PrivateHeaders/NlsDataProcess.h</key>
-		<data>
-		O2pYHaKq4v29bIsn2JR4OlUgTqs=
-		</data>
-		<key>PrivateHeaders/NlsDataTransfer.h</key>
-		<data>
-		7yvzRjwn4DA2S9sfPNej6xHcmog=
 		</data>
 		<key>PrivateHeaders/NlsDispatchSafe.h</key>
 		<data>
 		kmsWIcvh20sax/MZRCOzDLUEYws=
 		</data>
-		<key>PrivateHeaders/NlsErrorCollection.h</key>
-		<data>
-		IVJRbPoID+sqh5jAiGGuMf6q3LA=
-		</data>
-		<key>PrivateHeaders/NlsErrorReporter.h</key>
-		<data>
-		JXvv8TFicLmWLo5E30os90TIdJ0=
-		</data>
-		<key>PrivateHeaders/NlsFPIDManager.h</key>
-		<data>
-		rZLCYWxmP8+cwRVpohN/fuVenN4=
-		</data>
-		<key>PrivateHeaders/NlsID3DataProcessor.h</key>
-		<data>
-		ssr2NPv2vn3ixpp/krVwYRZDZVE=
-		</data>
 		<key>PrivateHeaders/NlsID3MeterConstants.h</key>
 		<data>
 		Hr2IR7AnZzaSair3lnTZ3uqca/4=
 		</data>
-		<key>PrivateHeaders/NlsID3Tag.h</key>
+		<key>PrivateHeaders/NlsInvocationWrapper.h</key>
 		<data>
-		m0Tgjw2XPa+AvATzsHjjGfXbTuk=
+		TSn3uwUBjBvbBtbInaPQN1hXPtA=
 		</data>
-		<key>PrivateHeaders/NlsLogger.h</key>
+		<key>PrivateHeaders/NlsLogLevel.h</key>
 		<data>
-		NiG4G25Z16I9owFn19y7FPeXsh4=
+		OvCwi9BaVAv9KMyOa1cVtpTKOl0=
 		</data>
-		<key>PrivateHeaders/NlsTSVRequest.h</key>
+		<key>PrivateHeaders/NlsSQLiteWrapper.h</key>
 		<data>
-		fpzCQALR5VbyqisWpkI7cv1v9q0=
-		</data>
-		<key>PrivateHeaders/NlsUrlParser.h</key>
-		<data>
-		NfbQ6Xs8ZDUI0rXWwqIiXph2G4k=
-		</data>
-		<key>PrivateHeaders/NlsViewPattern.h</key>
-		<data>
-		8VQuOmu7TbJobawhfcklPAmKG/w=
+		56IjxEKX5sfnrXSqwi75M9BXwFs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -162,105 +122,105 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DgtC1kLmIjX3Qf/xUILEqprRj0Os1KM8YyEeX28Ifkg=
+			rGZdZbsZYoN6hp1jCTuHL5bZQM6Xv5Y6nuPwcxySX8M=
 			</data>
 		</dict>
 		<key>Headers/NielsenAppSDKJSHandler.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MZAaZ2hPTnEKIoJoNyXqKhlpqsPitxLUg1fnsVXw31E=
+			iJhiiLYlA6/PiRTBKCY/CMlkICzXf/ntMOa3LRH833s=
 			</data>
 		</dict>
 		<key>Headers/NielsenEventTracker.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rn+BPZULHtDH2DUKGuGsWF8r8bayuLEkqxfZUgBYtUE=
+			8/l1gk1jXE0T4p2mRC2Or/z5w+SEsahqZwD5I8tq3Ts=
 			</data>
 		</dict>
 		<key>Headers/NielsenVisionAppApi-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y7wqzcDm9qJP+IzDE1L9nagORjuZZQy610aL8Rwj14g=
+			Y2zZr8vZFBVIAivtU/lKalTe/4+w8JpRM5Rt1zza/W4=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4zII5Ho6EshNyvtcSqDA1zE9Jki8RwZ14lvtWJSBZ5w=
+			BEj1t5fc8BMWuSioqz5WVefXf8fmyksCZlsKjURghxQ=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7pMcXWa+oRSSzSHOkwRtZfsFgVH/wixk5sAjrp3da14=
+			TppEUJYOjmzGS38FMMVenZ1Iu1bdH4qsb/Y2EJZsctU=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t8bAca3bFpDcRFfDCH8K2j5GyCIbRGrSD0PhaYmv0IE=
+			QLK9Ek9GEAjzdLOmIorag022nRrEeuogl7gGYszuPnU=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7pMcXWa+oRSSzSHOkwRtZfsFgVH/wixk5sAjrp3da14=
+			TppEUJYOjmzGS38FMMVenZ1Iu1bdH4qsb/Y2EJZsctU=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vzqnGdc4bM6nTrBcg8qbY/obws5RT27v0HIK2oxpAWo=
+			cZ33/5/pmtMv2ApLOZdjmzPO9BchPeFsUyasA4CZ+P8=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4zII5Ho6EshNyvtcSqDA1zE9Jki8RwZ14lvtWJSBZ5w=
+			BEj1t5fc8BMWuSioqz5WVefXf8fmyksCZlsKjURghxQ=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S404KAsp9jrOWTUIgUAnFRV3EzTkeS+x4fcDvdch/VE=
+			AIPabN71A7pdvw9zG1g7AZ0jq5qNAHu0kr9f/Y+bLMY=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o67VPBYGQm/GcGHAhf0pEX9wZLi6w8sDyZ3A4xm+hgw=
+			4qcULy3+IEPa3rEQ11gDi4ui/QrDGW0H9ESzG9nj30s=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S404KAsp9jrOWTUIgUAnFRV3EzTkeS+x4fcDvdch/VE=
+			AIPabN71A7pdvw9zG1g7AZ0jq5qNAHu0kr9f/Y+bLMY=
 			</data>
 		</dict>
 		<key>Modules/NielsenVisionAppApi.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j69Ae92vuIkHvGN70dNpA8fO1H4fqtrBbB650rnHCkE=
+			2Rjn960sm56tf56ZQAA+d9kuefum5AulIAQ/XVGc/hQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YPpcVujgvlcbkXiP/61sjPaEUzAr/FSc2oRBlXBtNEg=
+			oQh27hLBxN2TRSRuM0vmVupLIczUnb+kceH4vn7Vv8M=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
@@ -270,53 +230,25 @@
 			ZPd15sbc+Ev3Gttgj0qbtyYwKujgukQk3efi8sYkmew=
 			</data>
 		</dict>
+		<key>PrivateHeaders/NielsenAppApi+Priv.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iST7k8ysfGSGSFH0DH0v6vbgJJTnMTnB6ilIpwu1PTk=
+			</data>
+		</dict>
+		<key>PrivateHeaders/NielsenAppApiEnums.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			syAnb9heO74c8zZywZSFEyhJnajX8ZVH0fQWHUf4OKg=
+			</data>
+		</dict>
 		<key>PrivateHeaders/NielsenVisionAppApi.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			fKYVRcB7L47c/pK6vLZZHvpJ1NlqyecwjhlBNbO2Ies=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NlsApiWorker.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GpaEnWMq3jF6z9oxRWQH/MySWQyP+O4ZcdrU/n4BX2A=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NlsBaseDataProcessor.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZAR6QEZdc2hL2hlr19+Htbu+xtxRj/aqgnAdFy6Wb/k=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NlsCache.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CKAn+RrmlhlIiMgRyUCI8vyLOESQkjAel0hUIzVZvfA=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NlsConfigManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OokhuXLlEWMItuo2dIzkls605xRYxmkqez4xbkSamWg=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NlsDataProcess.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			di9lm0D7xnvntl4N47B85fz6iDhb6iijn7JvKWp7mG0=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NlsDataTransfer.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hoNwrAxHrOcT3f/cEBx4YOJooOqurt6STNYw1j6Fv/M=
 			</data>
 		</dict>
 		<key>PrivateHeaders/NlsDispatchSafe.h</key>
@@ -326,34 +258,6 @@
 			ojk6e7xL15tXYCABJg1EaqklxJDN4kJi7VC3/8KnXww=
 			</data>
 		</dict>
-		<key>PrivateHeaders/NlsErrorCollection.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Hr0MpWb4bxZqkq+nf7tqF8rpg1XgyzDDKqPcr/6M0HU=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NlsErrorReporter.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			x4QD4RodqGl5mvnnF8FutpciYuYMfOpniTnxlb2JE/g=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NlsFPIDManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Unc1lQIV5q+yCcYguU7123ERMbtE4Ce7vyEprGSmdiA=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NlsID3DataProcessor.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vJIagib4gnswesovF/Xip3+Xr9y57JCbD88DeHY5k08=
-			</data>
-		</dict>
 		<key>PrivateHeaders/NlsID3MeterConstants.h</key>
 		<dict>
 			<key>hash2</key>
@@ -361,39 +265,25 @@
 			hvlAXjFovb2XDluhvZiW9Zm0LgVnCjsGY4yw0QkEpd0=
 			</data>
 		</dict>
-		<key>PrivateHeaders/NlsID3Tag.h</key>
+		<key>PrivateHeaders/NlsInvocationWrapper.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fHpLbRA9Z8iomtetXXZxgK2A1yXrK1K3p+DfBVnXgVs=
+			WxNdyv7usFCTyMjwzaZmUy/v8QNE/m/CBIzl9412eiw=
 			</data>
 		</dict>
-		<key>PrivateHeaders/NlsLogger.h</key>
+		<key>PrivateHeaders/NlsLogLevel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JJijRc6KCcqWrZw//0aPKy/6ic08WNze+Ps4R/EBt9g=
+			47xT43tjRtGWcYqUNnwu9PnZnPjPk1xXnKDRHi3HTWU=
 			</data>
 		</dict>
-		<key>PrivateHeaders/NlsTSVRequest.h</key>
+		<key>PrivateHeaders/NlsSQLiteWrapper.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NDYbd4PhX0dlNW7X8erD2aVhHn5UM8dV072CWibgoFw=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NlsUrlParser.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			cddZNzfnLgBCr5hY6F9TNz74Yi4+sNWo7ZaZaP9oFR4=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NlsViewPattern.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			asc6kcB7JRMaVYaCp0lV/N+9x7slPKMjqAi5Y9et8aE=
+			+d3P5FmwVL+bg7kJjztY3UEwq+wxVynGXcHQRkt2nXU=
 			</data>
 		</dict>
 	</dict>

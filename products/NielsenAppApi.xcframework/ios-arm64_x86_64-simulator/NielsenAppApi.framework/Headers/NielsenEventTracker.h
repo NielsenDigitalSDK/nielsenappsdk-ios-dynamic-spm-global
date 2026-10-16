@@ -13,6 +13,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
 
+#if !defined(NIELSENAPPAPI_SWIFT_GENERATED) && !__has_include("NielsenAppApi-Swift.h")
 /**
  TrackEvent API parameters
  JSON dict possible keys
@@ -195,3 +196,4 @@
 
 @end
 
+#endif
